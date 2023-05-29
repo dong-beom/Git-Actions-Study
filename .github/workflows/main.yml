@@ -27,3 +27,7 @@ jobs:
 
       - name: Run linter
         run: mvn spotbugs:check
+
+      - name: Push changes
+        if: ${{ failure() == false }}  # 워크플로우가 실패하지 않은 경우에만 실행
+        run: git push origin main
