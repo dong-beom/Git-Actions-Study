@@ -25,6 +25,27 @@
                 <artifactId>spotbugs-maven-plugin</artifactId>
                 <version>4.3.0</version>
             </plugin>
+
+            <plugin>
+                <groupId>ga.rugal.maven</groupId>
+                <artifactId>commitlinter-maven-plugin</artifactId>
+                <version>1.5.0</version>
+                <configuration>
+                    <failOnError>true</failOnError>
+                    <captureGroups>
+                        <captureGroup>
+                            <max>10</max>
+                            <min>2</min>
+                            <caseFormat>LOWERCASE</caseFormat>
+                        </captureGroup>
+                        <captureGroup>
+                            <max>20</max>
+                            <tense>PRESENT</tense>
+                            <caseFormat>LOWERCASE</caseFormat>
+                        </captureGroup>
+                    </captureGroups>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
