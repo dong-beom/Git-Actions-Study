@@ -21,4 +21,5 @@ jobs:
           aws-region: ap-northeast-2
 
       - name: Deploy
-         run: aws s3 cp --recursive --region ap-northeast-2 . s3://demo-static-page
+        run: |
+          aws s3 cp --recursive --region ap-northeast-2 . s3://demo-static-page
