@@ -22,6 +22,6 @@ public class SQLInjectionExample {
     }
 
     private static String thirdMethod() {
-        return "3  ";
+        return "3    ";
     }
 }
