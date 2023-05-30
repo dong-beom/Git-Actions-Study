@@ -22,4 +22,4 @@ jobs:
 
       - name: Deploy
         run: |
-          aws s3 sync index.html s3://demo-static-page/index.html
+          aws s3 sync ./index.html s3://demo-static-page/index.html
