@@ -20,4 +20,8 @@ public class SQLInjectionExample {
         // 사용자로부터 입력 받는 로직
         return "2";
     }
+
+    private static String thirdMethod() {
+        return "3";
+    }
 }
